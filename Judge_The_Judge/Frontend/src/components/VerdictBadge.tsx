@@ -1,5 +1,1 @@
-type Props = { verdict: string };
-export default function VerdictBadge({ verdict }: Props) {
-  const v = ['PASS','FAIL','UNCERTAIN'].includes(verdict) ? verdict : 'UNCERTAIN';
-  return <wa-badge pill variant={v==='PASS'?'success':v==='FAIL'?'danger':'warning'}>{v}</wa-badge>;
-}
+export default function VerdictBadge({verdict}:{verdict:string}){const v=verdict.toLowerCase();return <span className={`verdict-badge ${v==='pass'?'pass':v==='fail'?'fail':'uncertain'}`}>{verdict}</span>}

@@ -1,9 +1,2 @@
-import Person2Workspace from './Person2Workspace';
-
-export default function App() {
-  return (
-    <main className="app-shell">
-      <Person2Workspace />
-    </main>
-  );
-}
+import {useState} from 'react';import DashboardLayout from './layouts/DashboardLayout';import Overview from './pages/Overview';import Analytics from './pages/Analytics';import Diagnose from './pages/Diagnose';import RunEvaluation from './pages/RunEvaluation';import JudgeBuilder from './pages/JudgeBuilder';import Recipe from './pages/Recipe';import './dashboard.css';
+export default function App(){const [active,setActive]=useState('Overview');let page;if(active==='Overview')page=<Overview/>;else if(active==='Analytics')page=<Analytics/>;else if(active==='Diagnose')page=<Diagnose/>;else if(active==='Run evaluation')page=<RunEvaluation/>;else if(active==='Judge builder')page=<JudgeBuilder/>;else page=<Recipe/>;return <DashboardLayout active={active} onNavigate={setActive}>{page}</DashboardLayout>}

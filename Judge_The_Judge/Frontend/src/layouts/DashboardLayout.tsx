@@ -1,0 +1,2 @@
+import type {ReactNode} from 'react';import Sidebar from '../components/Sidebar';import Navbar from '../components/Navbar';
+export default function DashboardLayout({active,onNavigate,children}:{active:string,onNavigate:(v:string)=>void,children:ReactNode}){return <div className="dashboard-layout"><Sidebar active={active} onNavigate={onNavigate}/><div className="main-column"><Navbar title={active}/><main className="main-content">{children}</main></div></div>}
