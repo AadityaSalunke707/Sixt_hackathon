@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "@awesome.me/webawesome": "latest"
-  },
-  "devDependencies": {
-    "typescript": "latest"
-  }
-}

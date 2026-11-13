@@ -1,123 +1,53 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Judge the Judge — Frontend
-=======
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/main
-# React + TypeScript + Vite
-=======
-# React + Vite
->>>>>>> 9547c88820b860a0e3eb6797bed25ff537dabb74
-<<<<<<< HEAD
->>>>>>> b91fbb478ed1e152ecae3322625f92eef33dfe6a
-=======
->>>>>>> refs/remotes/origin/main
+# Judge the Judge — SIXT Hackathon Frontend
 
-Combined React + TypeScript + Vite frontend for both dashboard/diagnostics and judge configuration/evaluation.
+A single React + TypeScript + Vite application combining the shared dashboard and judge evaluation workspace.
 
-## Start
+## Requirements
+
+- Node.js 20.19+ or 22.12+
+- npm
+
+## Start locally
 
 ```bash
 npm install
+cp .env.example .env
 npm run dev
 ```
 
-## Production build
+If you do not have a backend running yet, the dashboard can still be explored, but evaluation requests need the API described below.
+
+## Checks and production build
 
 ```bash
+npm run lint
+npx tsc -b
 npm run build
 ```
 
-## Backend connection
+The build script runs the TypeScript project checks before Vite creates the production bundle.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Create `.env` in this folder:
+## Backend configuration
+
+Copy `.env.example` to `.env` and adjust the values for your backend:
 
 ```env
 VITE_API_BASE_URL=http://localhost:8000
 VITE_EVALUATE_PATH=/api/evaluate
 ```
 
-The Run Evaluation page expects `POST /api/evaluate`. Confirm the route and response schema with the backend implementation. The API adapter lives in `src/services/api.ts`.
+The evaluation page sends `POST /api/evaluate`. Confirm the request and response schema against the backend implementation. The API adapter is `src/services/api.ts`.
 
 ## Source structure
 
-- `src/components/`: shared dashboard and evaluation UI components
-- `src/pages/`: Overview, Analytics, Diagnose, Run Evaluation, Judge Builder, Recipe
-- `src/layouts/`: shared dashboard shell and navigation
-- `src/services/`: backend API adapter
+- `src/layouts/` — shared dashboard layout and navigation
+- `src/pages/` — Overview, Analytics, Diagnose, Run Evaluation, Judge Builder, and Recipe
+- `src/components/` — reusable dashboard and evaluation components
+- `src/services/` — backend API adapter
+- `src/assets/` — local images and assets
+- `src/Person2Workspace.tsx` — standalone Person 2 workspace component, retained for optional use
+- `src/person2-webawesome.ts` — single registration point for WebAwesome custom elements
 
-Charts and case rows currently marked as illustrative/demo are placeholders until connected to actual benchmark CSV outputs. Do not present them as measured results.
-=======
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/main
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Notes
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-=======
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 9547c88820b860a0e3eb6797bed25ff537dabb74
-<<<<<<< HEAD
->>>>>>> b91fbb478ed1e152ecae3322625f92eef33dfe6a
-=======
->>>>>>> refs/remotes/origin/main
+The main application uses one `App.tsx` and one `main.tsx`. Demo/illustrative dashboard data should not be presented as measured benchmark results. Keep secrets out of frontend environment variables; Vite-exposed variables are bundled into client code.

@@ -1,0 +1,100 @@
+{
+  "hash": "3a100e33",
+  "configHash": "3125a2b9",
+  "lockfileHash": "53f472d3",
+  "browserHash": "e19737c7",
+  "optimized": {
+    "@awesome.me/webawesome/dist/components/badge/badge.js": {
+      "src": "../../node_modules/@awesome.me/webawesome/dist/components/badge/badge.js",
+      "file": "@awesome__me_webawesome_dist_components_badge_badge__js.js",
+      "fileHash": "1855fefd",
+      "needsInterop": false
+    },
+    "@awesome.me/webawesome/dist/components/button/button.js": {
+      "src": "../../node_modules/@awesome.me/webawesome/dist/components/button/button.js",
+      "file": "@awesome__me_webawesome_dist_components_button_button__js.js",
+      "fileHash": "6c146d2e",
+      "needsInterop": false
+    },
+    "@awesome.me/webawesome/dist/components/callout/callout.js": {
+      "src": "../../node_modules/@awesome.me/webawesome/dist/components/callout/callout.js",
+      "file": "@awesome__me_webawesome_dist_components_callout_callout__js.js",
+      "fileHash": "14156164",
+      "needsInterop": false
+    },
+    "@awesome.me/webawesome/dist/components/card/card.js": {
+      "src": "../../node_modules/@awesome.me/webawesome/dist/components/card/card.js",
+      "file": "@awesome__me_webawesome_dist_components_card_card__js.js",
+      "fileHash": "e0a34bad",
+      "needsInterop": false
+    },
+    "@awesome.me/webawesome/dist/components/icon/icon.js": {
+      "src": "../../node_modules/@awesome.me/webawesome/dist/components/icon/icon.js",
+      "file": "@awesome__me_webawesome_dist_components_icon_icon__js.js",
+      "fileHash": "a2891422",
+      "needsInterop": false
+    },
+    "@awesome.me/webawesome/dist/components/spinner/spinner.js": {
+      "src": "../../node_modules/@awesome.me/webawesome/dist/components/spinner/spinner.js",
+      "file": "@awesome__me_webawesome_dist_components_spinner_spinner__js.js",
+      "fileHash": "0c3aecec",
+      "needsInterop": false
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "9700af85",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "8958915c",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "ef0a7b7d",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk.AOKMSJXD-DGbyRsIz": {
+      "file": "chunk.AOKMSJXD-DGbyRsIz.js",
+      "isDynamicEntry": false
+    },
+    "chunk.EGBUT3HG-DHVlSBRs": {
+      "file": "chunk.EGBUT3HG-DHVlSBRs.js",
+      "isDynamicEntry": false
+    },
+    "chunk.G5ZZIGWB-DGGZPKRs": {
+      "file": "chunk.G5ZZIGWB-DGGZPKRs.js",
+      "isDynamicEntry": false
+    },
+    "chunk.JAAVYFGY-DeNP6tCd": {
+      "file": "chunk.JAAVYFGY-DeNP6tCd.js",
+      "isDynamicEntry": false
+    },
+    "chunk.PZAN6FPN-C7tn_Lsq": {
+      "file": "chunk.PZAN6FPN-C7tn_Lsq.js",
+      "isDynamicEntry": false
+    },
+    "chunk.RPQJAXXR-Cjp2H-XT": {
+      "file": "chunk.RPQJAXXR-Cjp2H-XT.js",
+      "isDynamicEntry": false
+    },
+    "chunk.XNTP7DEQ-5LBodkYq": {
+      "file": "chunk.XNTP7DEQ-5LBodkYq.js",
+      "isDynamicEntry": false
+    },
+    "class-map-DXAFzh3k": {
+      "file": "class-map-DXAFzh3k.js",
+      "isDynamicEntry": false
+    },
+    "react-DgVJeC5g": {
+      "file": "react-DgVJeC5g.js",
+      "isDynamicEntry": false
+    }
+  }
+}

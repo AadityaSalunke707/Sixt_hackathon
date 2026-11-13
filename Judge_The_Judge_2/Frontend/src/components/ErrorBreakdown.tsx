@@ -1,0 +1,2 @@
+const rows=[['Dropped condition',31],['Overstated certainty',24],['Incorrect number / fact',19],['Policy contradiction',15],['Other semantic drift',11]] as const;
+export default function ErrorBreakdown(){return <div className="error-list">{rows.map(([name,n])=><div className="error-row" key={name}><div><span>{name}</span><b>{n}%</b></div><div className="track"><i style={{width:`${n}%`}}/></div></div>)}</div>}

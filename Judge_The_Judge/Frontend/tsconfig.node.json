@@ -3,10 +3,6 @@
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
     "target": "es2023",
     "lib": ["ES2023"],
-<<<<<<< HEAD
-=======
-    "types": ["node"],
->>>>>>> refs/remotes/origin/main
     "skipLibCheck": true,
 
     /* Bundler mode */
