@@ -1,1 +1,0 @@
-export default function VerdictBadge({verdict}:{verdict:string}){const v=verdict.toLowerCase();return <span className={`verdict-badge ${v==='pass'?'pass':v==='fail'?'fail':'uncertain'}`}>{verdict}</span>}

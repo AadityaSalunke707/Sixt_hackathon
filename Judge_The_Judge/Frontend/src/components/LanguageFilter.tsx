@@ -1,1 +1,0 @@
-export default function LanguageFilter({value,onChange}:{value:string,onChange:(v:string)=>void}){return <label className="filter-control"><span>Language</span><select value={value} onChange={e=>onChange(e.target.value)}><option value="All">All languages</option>{['EN','DE','FR','ES','IT'].map(x=><option key={x}>{x}</option>)}</select></label>}

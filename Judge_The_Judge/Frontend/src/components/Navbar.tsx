@@ -1,1 +1,0 @@
-export default function Navbar({title}:{title:string}){return <header className="topbar"><div className="breadcrumb">Judge the Judge <span>/</span> <b>{title}</b></div><div className="topbar-right"><span className="connection"><i/> Frontend preview</span><div className="top-avatar">JD</div></div></header>}
