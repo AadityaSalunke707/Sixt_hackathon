@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react'
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
@@ -120,3 +121,14 @@ function App() {
 }
 
 export default App
+=======
+import Person2Workspace from './Person2Workspace';
+
+export default function App() {
+  return (
+    <main className="app-shell">
+      <Person2Workspace />
+    </main>
+  );
+}
+>>>>>>> 9547c88820b860a0e3eb6797bed25ff537dabb74
