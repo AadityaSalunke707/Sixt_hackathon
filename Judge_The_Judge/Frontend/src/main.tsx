@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.tsx'
+=======
+>>>>>>> refs/remotes/origin/main
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
@@ -20,9 +29,18 @@ import './index.css';
 
 // Main application
 import App from './App';
+>>>>>>> 9547c88820b860a0e3eb6797bed25ff537dabb74
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
+<<<<<<< HEAD
+  </StrictMode>,
+)
+=======
   </StrictMode>
 );
+<<<<<<< HEAD
+=======
+>>>>>>> 9547c88820b860a0e3eb6797bed25ff537dabb74
+>>>>>>> refs/remotes/origin/main
